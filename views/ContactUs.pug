@@ -1,0 +1,29 @@
+extends base.pug
+
+block scripts
+    script 
+        include ../static/index.js
+
+block style  
+    style
+      include ../static/ContactStyle.css
+
+block content
+    
+    div#C 
+       div#right 
+            img(src="../static/img/call.svg" ) 
+            p 9876876456 / 8975467864 
+       div#right2     
+            img(src="../static/img/email.svg" ) 
+            p Contact@KunalDanceAcademy.com 
+
+       h1 Contact Us
+       p(id="unique") Send us your queries and we will get back to you.
+       form(action= "/ContactUs", method= "post", class= "myForm")
+        input(type="text" class= "name" id="name" name="name" placeholder="Enter your name" required)
+        input( type="phone" class= "myInput" id="number" name="phone" placeholder="Enter your number" required)
+        input(type="email" class= "myInput" id="email" name="email" placeholder="Enter your email" required)
+        input(type="text" name="Query" id="Query" placeholder="Enter Your Query" required)      
+        button(class="btn" onClick="Alert()")
+            |Submit 

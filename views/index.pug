@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title Kunal's Dance Academy
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    style
+      include ../static/style.css
+  body
+    nav.navbar.h-nav-resp
+        ul.nav-list.v-class-resp
+            div#logo
+                img(src="/static/img/logo.png")
+                |KDA
+            li #[a(href="/") Home]
+            li #[a(href="/AboutUs") About Us]
+            li #[a(href="/ClassInfo") Class Info]
+            li #[a(href="/ContactUs") Contact Us] 
+        div(class="burger")
+            div(class="line")
+            div(class="line")
+            div(class="line")
+     
+    section#introSection
+        div.bigg Welcome to kunals's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#LearnWithUs
+        h2 Learn With Us
+        section#cards    
+            div#card1.card
+                h4 Professional Trainers           
+            div#card2.card
+                h3  Different Styles
+            div#card3.card
+                h3 Workshops      
+    section#Certification
+        h2 Certification Program
+        div.certification
+            p Kunal's One Year Dance Certification Program (OYP) is a full-time dance training course that helps potential dancers hone their skills in a professional environment. Each year, dance enthusiasts from across the world between ages 15 to 28 register for the program and are auditioned by Kunal Verma. The ones who make it into the program are trained for a year at our Mumbai studio. The program focuses on technique, training and knowledge in over ten dance styles, with specialized training in the renowned Kunal's Style of Contemporary. Kunal actively teaches at the OYP and monitors their progress through the year. The OYP is a part of Kunal’s mission to help dance enthusiasts make their passion a profession.
+    footer#footer
+        | Copyright © 2021 KunalDanceAcademy.com | All Rights Reserved        
+    script 
+        include ../static/index.js        

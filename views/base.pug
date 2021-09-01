@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Kunal's Dance Academy
+    block scripts     
+    block style   
+  body
+    nav.navbar.h-nav-resp
+      ul.nav-list.v-class-resp
+        div#logo
+            img(src="/static/img/logo.png")
+            |KDA
+        li #[a(href="/") Home]
+        li #[a(href="/AboutUs") About Us]
+        li #[a(href="/ClassInfo") Class Info]
+        li #[a(href="/ContactUs") Contact Us] 
+      div(class="burger")
+          div(class="line")
+          div(class="line")
+          div(class="line") 
+  block content
+  footer#footer
+      | Copyright © 2021 KunalDanceAcademy.com | All Rights Reserved 

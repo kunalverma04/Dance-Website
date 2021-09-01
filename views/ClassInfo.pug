@@ -1,0 +1,17 @@
+extends base.pug
+
+block scripts
+    script 
+        include ../static/index.js
+
+block style  
+    style
+      include ../static/CLassInfoStyle.css
+block content
+    div#section
+        marquee(behavior="scroll", direction="left") Offline Classes Will Remain Closed Till 15th Of June Due To Lockdown.      
+        div#Online
+            p.one Register For Online Dance Sessions By Filling The  Contact Us Form.
+            p.two Online Sessions Are Conducted Via Kv App -Loads Of Fun,Get to interact With Aspiring Dancers.
+            a(href="/ContactUs" class="btnC")|Register
+                 
